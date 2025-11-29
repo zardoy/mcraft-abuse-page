@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Abuse - mcraft</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .contact-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            margin-bottom: 25px;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-label {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .contact-value {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .contact-value a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+
+        .discord-link {
+            display: inline-block;
+            background: #5865F2;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .discord-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(88, 101, 242, 0.4);
+        }
+
+        .not-report-section {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        .not-report-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #856404;
+            margin-bottom: 15px;
+        }
+
+        .not-report-list {
+            list-style: none;
+            color: #856404;
+            line-height: 1.8;
+        }
+
+        .not-report-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .not-report-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .container {
+                padding: 40px 25px;
+            }
+
+            .description {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Report Abuse</h1>
+
+        <p class="description">
+            Please let me know of any abusive actions from my services first
+        </p>
+
+        <div class="contact-section">
+            <div class="contact-item">
+                <span class="contact-label">Email Support:</span>
+                <div class="contact-value">
+                    <a href="mailto:support@mcraft.fun">support@mcraft.fun</a><br>
+                    Short email response within 24h
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-label">For the fastest (urgent) possible response:</span>
+                <div class="contact-value">
+                    <a href="https://discord.gg/E7mhKqPqw8" class="discord-link" target="_blank" rel="noopener noreferrer">
+                        Join Discord Server
+                    </a><br>
+                    Join server and ping @zardoy (or DM me) - feel free to communicate with me to just ask a question
+                </div>
+            </div>
+        </div>
+
+        <div class="not-report-section">
+            <div class="not-report-title">Please don't spam. Please don't report for no reason.</div>
+            <ul class="not-report-list">
+                <li>If you don't like someone player's behavior on my server.</li>
+                <li>If you just want a mod.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
